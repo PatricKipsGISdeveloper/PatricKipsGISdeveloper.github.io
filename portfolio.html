@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Patrick Sang| Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+    <!--- Navigation Bar --->
+<body>
+  <nav>
+    <div class="navbar" id="mynavbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="portfolio.html" class="active">portfolio</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+  <!--- Section 1: Title --->
+  <div class="about_me_title">
+    <div class="about_me_text">
+      <h1>Projects</h1>
+    </div>
+  </div>
+<!-- Portfolio Gallery Grid -->
+<div style="background-color: var(--alternative)">
+  <div style="max-width: 1800px; margin: 0 auto !important; float: none !important;">
+  <!--- Section 2a: GIS Portfolio control buttons --->
+  <div class="portfolio_cont">
+  <div id="myBtnContainer">
+    <button class="portbtn portactive" onclick="filterSelection('all')"> see all</button>
+    <button class="portbtn" onclick="filterSelection('GIS')"> GIS</button>
+    <button class="portbtn" onclick="filterSelection('remotesensing')"> Remote Sensing</button>
+    <button class="portbtn" onclick="filterSelection('webmaps')"> Web Gis</button>
+        <button class="portbtn" onclick="filterSelection('clark')"> Machine Learning</button>
+    <button class="portbtn" onclick="filterSelection('develop')">Spatial Analysis</button>
+  </div>
+<div class="portrow">
+  <div class="portcolumn GIS remotesensing develop">
+    <div class="portcontent">
+      <a href="projects/landscapemetrics.html" target="" class="port_txt">
+        <img src="images/landmetrics_2013.jpg" alt="" style="width:100%">
+        <h3 style="font-family: 'Montserrat', sans-serif;"> Fragstat Analysis:Assesing Landscape Structure using Landscape Metrics</h3>
+        <h4></h4>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS remotesensing">
+    <div class="portcontent">
+      <a href="projects/topography.html" target="" class="port_txt">
+
+        <img src="images/part3.jpg" alt="Mapping  JavaScript API" style="width:100%">
+        <h3 style="font-family: 'Montserrat', sans-serif;">Morphometric and Topo-hydrological analysis for prioritization of water sheds in River Yala catchment</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS remotesensing develop">
+    <div class="portcontent">
+      <a href="projects/runoff.html" target="" class="port_txt">
+        <img src="images/prior2.jpg" alt="Central America Disasters Project" style="width:100%">
+        <h3 style="font-family: 'Montserrat', sans-serif;">Rainfall-Runoff simulation in River Yala Catchment Using SWAT Model</h3>
+        <h4></h4>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS remotesensing develop">
+    <div class="portcontent">
+      <a href="projects/landcover.html" target="" class="port_txt">
+        <img src="images/landuse change.jpg" class alt="Argentina Agriculture Project" style="width:100%">
+        <h3 style="font-family: 'Montserrat', sans-serif;">Landuse landcover Change Detection in Kericho County(2014-2023)</h3>
+        <h4></h4>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS remotesensing clark">
+    <div class="portcontent">
+      <a href="projects/forest.html" target="" class="port_txt">
+      <img src="images/frag_17.jpg" alt="Clark Labs Pond Aquaculture" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Assessing Spatiotemporal Forest Fragmentation In Kericho County </h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS remotesensing">
+    <div class="portcontent">
+      <a href="projects/spatialanalysis.html" target="" class="port_txt">
+      <img src="images/ndwi.jpg" alt="WCS Environmental Trends Analysis" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;"> Spatial Analyses</h3>
+      </a>
+    </div>
+  </div>
+  <!--<div class="portcolumn webmaps">
+    <div class="portcontent">
+      <a href="projects/USAID-Web-Mapping-Course-Project.html" target="" class="port_txt">
+      <img src="images/WM_layer_crop.jpg" alt="USAID Web Mapping Project" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Road Density:Kericho County</h3>
+      </a>
+    </div>
+  </div>
+ <!---- <div class="portcolumn webmaps">
+    <div class="portcontent">
+      <a href="projects/Malnutrition-Health-Sites-in-Mali-Web-Mapping.html" target="" class="port_txt">
+      <img src="images/studio6_project_image_crop.jpg" alt="Car" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Flood Risk mapping:Busia County</h3>
+      </a>
+    </div>
+  </div>
+ <!---- <div class="portcolumn webmaps">
+    <div class="portcontent">
+      <a href="projects/studio4.html" target="" class="port_txt">
+      <img src="images/studio4.png" alt="Car" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Studio 4 Web Map</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn webmaps">
+    <div class="portcontent">
+      <a href="projects/studio3.html" target="" class="port_txt">
+      <img src="images/studio3.png" alt="Car" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Studio 3 Web Map</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS">
+    <div class="portcontent">
+      <a href="projects/Vulnerability-Populations-in-Vietnam-to-Tropical-Cyclones.html" target="" class="port_txt">
+      <img src="images/vulnerability_project_image_v2_crop.jpg" alt="Car" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Vulnerability of Populations in Vietnam to Tropical Cyclones</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS webmaps">
+    <div class="portcontent">
+      <a href="projects/SDM_Eastern_Hemlock_Web_Application.html" target="" class="port_txt">
+      <img src="images/SDM2_layer_crop.jpg" alt="Car" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Eastern Hemlock Species Distribution Model Web Map</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS">
+    <div class="portcontent">
+      <a href="projects/Electric_Vehicle_Spatial_Analysis.html" target="" class="port_txt">
+      <img src="images/ny_fig2_crop.jpg" alt="People" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Electric Vehicle Spatial Analysis with R</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS">
+    <div class="portcontent">
+      <a href="projects/SDM_Papio_anubis_and_hamadryas.html" target="" class="port_txt">
+      <img src="images/sdm_papio_anubis.jpg" alt="Car" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Specied Distribution Model: Papio anubis and Papio hamadryas</h3>
+      </a>
+    </div>
+  </div>
+  <div class="portcolumn GIS clark">
+    <div class="portcontent">
+      <a href="projects/Clark_Labs_ESRI_Global.html" target="" class="port_txt">
+      <img src="images/ClarkLabs_ESRI.png" alt="Car" style="width:100%">
+      <h3 style="font-family: 'Montserrat', sans-serif;">Clark Labs ESRI Global Land Cover Change Vulnerability and Prediction Mapping</h3>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- END GRID -->
+</div>
+</div>
+</div>
+  <!--- Section 3: Contact Information --->
+
+  <div class="about_me_interests_cont_pg2">
+    <div class="about_me_interests_pg2">
+  <div class="grid_background_col2" style="padding:0%;"></div>
+      
+      <section class="contact section" id="contact">
+        <h2 class="section__title"></h2>
+        <span class="section__subtitle"></span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-calling contact__icon"></i>
+
+             <!---<div>
+                <h3 class="contact__title">Get in touch</h3>
+                <span class="contact__subtitle"
+                  ><a href="tel:0790835786"></a>0790835786</span
+                >
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope-minus contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">email</h3>
+                <span class="contact__subtitle"
+                  >sangpatrick211@gmail.com</span
+                >
+              </div>
+            </div>-->
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle"
+                  >Nakuru,Kenya</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="content__label">Name</label>
+                <input type="text" class="contact__input" />
+              </div>
+
+              <div class="contact__content">
+                <label for="" class="content__label">Email</label>
+                <input type="Email" class="contact__input" />
+              </div>
+            </div>
+
+            <div class="contact__content">
+              <label for="" class="content__label"></label>
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
+            </div>
+
+            <div>
+              <a
+                href=" mailto: sangpatrick211@gmail.com?subject=Testing out mailto! &body=This is only a test!"
+                class="button button--flex"
+              >
+                Send Message
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+      <br>
+      <h2 style="font-family: 'Montserrat', sans-serif;"></h2>
+      <br>
+      <p>Please feel free to contact me though email:sangpatrick211@gmail.com or through:0790835786</p>
+      <br>
+      <h2 style="font-family: 'Montserrat',  sans-serif;"></h2>
+      <br>
+      <p></p>
+      <br>
+    </div>
+  </div>
+  <!--- Footer --->
+  <div class="top_footer">
+    <p style="font-size: 24px; font-family: 'Montserrat', sans-serif;"></p>
+    <a href="https://www.facebook.com/patrickkiplangat.sang/"><i class="fa fa-facebook"></i></a>
+   <!---- <a href="https://github.com/cawilliams719"><i class="fa fa-github"></i></a>-->
+  </div>
+  <div class="bottom_footer">
+    <p><small>&copy; Copyright 2025, Patrick Sang</small></p>
+  </div>
+  <script src="scripts/filter.js"></script>
+  <script src="scripts/icon.js"></script>
+  </body>
+</html>
